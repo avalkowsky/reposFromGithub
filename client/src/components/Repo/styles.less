@@ -1,0 +1,29 @@
+@import "../colors";
+
+.row {
+  background-color: @row-bg-color;
+  width: inherit;
+  border: 1px solid @row-border-color;
+  & > td {
+    padding: 10px;
+    border: 1px solid @row-border-color;
+  }
+}
+
+.placeholder {
+  background-color: aliceblue;
+  padding: 40px;
+  border: 3px inset cornflowerblue;
+  margin: auto 30%;
+  background-blend-mode: difference;
+  text-align: center;
+  font-family: monospace;
+  text-transform: lowercase;
+  color: darkblue;
+}
+
+.placeholder.error {
+  border-color: crimson;
+  color: maroon;
+  background-color: #f6f6f6;
+}

@@ -1,0 +1,35 @@
+@import "../colors";
+
+.container {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.container > tbody {
+  & > .row:first-child {
+    background-color: @row-bg-color-darker;
+  }
+
+  & > .row > td:last-child {
+    &:hover {
+      background: white url("../../img/GitHub-Mark-32px.png") no-repeat center;
+      & > a {
+        color: transparent;
+      }
+    }
+
+  }
+
+  & > .row:first-child > td:last-child {
+    &:hover {
+      background: @row-bg-color-darker none;
+      & > a {
+        color: black;
+      }
+    }
+
+  }
+}
+
+
