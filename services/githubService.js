@@ -1,5 +1,5 @@
 const axios = require('axios');
-const {githubUri, githubApiKey} = require('../config/envs');
+const {githubUri = 'https://api.github.com', githubApiKey} = require('../config/envs');
 const {ShallowRepository} = require('../models/ShallowRepository');
 
 const LAST_DAYS_QUANTITY = 30;
