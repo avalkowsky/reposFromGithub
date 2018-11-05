@@ -44,7 +44,7 @@ const getUserRepos = async (username, lastUpdated = getDefaultLastUpdatedDate())
         const response = await axios.get(`${githubUri}/users/${username}/repos?sort=updated`, {
             headers: {
                 Accept: 'application/vnd.github.mercy-preview+json',
-                Authorization: `Basic ${githubApiKey}`
+                Authorization: `token ${githubApiKey}`
             }
         });
 
